@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layers>
+    <!-- -*- extra stuff goes here -*- -->
+
+    <layer name="QuintagroupMegamenu"
+        interface="quintagroup.megamenu.interfaces.quintagroupmegamenulayer.IQuintagroupMegamenuLayer"
+    />
+</layers>
+

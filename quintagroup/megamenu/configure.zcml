@@ -15,5 +15,8 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   <!-- -*- extra stuff goes here -*- -->
+
+  <i18n:registerTranslations directory="locales" />
+  
   
 </configure>
