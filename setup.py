@@ -25,6 +25,7 @@ setup(name='quintagroup.megamenu',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'collective.panels',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
@@ -33,6 +34,4 @@ setup(name='quintagroup.megamenu',
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      setup_requires=["PasteScript"],
-      paster_plugins=["ZopeSkel"],
       )

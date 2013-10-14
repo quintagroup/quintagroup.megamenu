@@ -5,15 +5,10 @@ from Acquisition import aq_inner
 from zope.component.hooks import getSite
 
 from collective.panels.traversal import PanelManager
-from plone.app.theming.utils import isThemeEnabled
 
 
 class GlobalSectionsViewlet(ViewletBase):
     index = ViewPageTemplateFile('templates/sections.pt')
-
-    @property
-    def isThemeEnabled(self):
-        return isThemeEnabled(self.request)
 
     def getItem(self, tab):
         site = getSite()
