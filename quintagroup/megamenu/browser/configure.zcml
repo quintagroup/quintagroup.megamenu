@@ -1,23 +1,11 @@
-<configure xmlns="http://namespaces.zope.org/zope"
-           xmlns:browser="http://namespaces.zope.org/browser"
-           i18n_domain="quintagroup.megamenu">
-    <!-- -*- extra stuff goes here -*- -->
-
-    <!-- If you are using plone version 3.0, you will need to include the 
-         plone.browserlayer package in your buildout and uncomment the following
-         line in order to use IQuintagroupMegamenuLayer as a layer attribute -->
-    <!-- 
-    <include package="plone.browserlayer" />
-    -->
-    <!-- Example of browser component with IQuintagroupMegamenuLayer layer attribute -->
-    <!-- 
-    <browser:page
-        name="my-view"
-        for="*"
-        permission="zope.Public"
-        template="my-view.pt"
+<configure
+    xmlns="http://namespaces.zope.org/browser"
+    i18n_domain="quintagroup.megamenu">
+    <viewlet
+        name="plone.global_sections"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".sections.GlobalSectionsViewlet"
+        permission="zope2.View"
         layer="..interfaces.IQuintagroupMegamenuLayer"
         />
-    -->
-
 </configure>
