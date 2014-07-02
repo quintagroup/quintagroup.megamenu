@@ -1,0 +1,35 @@
+#portal-globalnav li ul[class^="megamenuSections"],
+#portal-globalnav li ul[class^="megamenuSections"] {
+	display: none;
+	background: #ddd;
+	}
+#portal-globalnav li:hover  ul[class^="megamenuSections"],
+#portal-globalnav li:hover  ul[class^="megamenuSections"] {
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	}
+#theme-globalnav li {
+	position: static !important;
+	}
+#portal-globalnav li ul a {
+	padding: 0em;
+	border: 0;
+	}
+#portal-globalnav li ul dt {
+	margin: 1em 0;
+	background: #205c90;
+	color: #fff;
+	}
+#portal-globalnav li ul p img {
+	margin: 1em 1em 1em 0;
+	max-width: 100%;
+	}
+ul[class^="megamenuSections"] .portletHeader a,
+ul[class^="megamenuSections"] .portletHeader a{	
+	display: inline-block !important;
+	}
+#theme-globalnav li ul {
+	width: 100%!important;
+	}

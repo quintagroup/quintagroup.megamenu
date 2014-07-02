@@ -1,0 +1,10 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+
+	<browser:resource
+		name="megamenu.css"
+		file="./resources/megamenu.css"
+		/>
+</configure>
