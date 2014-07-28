@@ -3,26 +3,41 @@
      i18n:domain="plone">
     <p class="hiddenStructure" i18n:translate="heading_sections">Navigation</p>
 
-    <ul id="portal-globalnav"
-        tal:define="selected_tab python:view.selected_portal_tab"
-        ><tal:tabs tal:repeat="tab portal_tabs"
-        ><li tal:define="tid tab/id"
-             tal:attributes="id string:portaltab-${tid};
-                            class python:selected_tab==tid and 'selected' or 'plain'"
-            ><a href=""
-               tal:attributes="href tab/url;
-                               title tab/description|nothing;"><span tal:content="tab/name">
-            Tab Name
-            </span></a>
-            <ul class="globalSectionsLevel1"
-                tal:define="panels python:view.getPanels(view.getItem(tab))"
-                tal:condition="panels">
-                <li tal:repeat="panel panels">
-                    <div tal:attributes="class string:panel panel-${repeat/panel/index} panel-${panel/layout}"
-                        tal:define="html panel/@@display"
-                        tal:condition="html"
-                        tal:content="structure html"
-                        />
+    
+    <div id="portal-globalnav"
+        tal:define="selected_tab python:view.selected_portal_tab">
+            <div class="nav_head">
+                <button type="button" class="navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+            </div>
+        <ul id="nav">
+            <tal:tabs tal:repeat="tab portal_tabs">
+                <li tal:define="tid tab/id"
+                 tal:attributes="id string:portaltab-${tid};
+                                class python:selected_tab==tid and 'selected' or 'plain'"
+                ><a href=""
+                   tal:attributes="href tab/url;
+                                   title tab/description|nothing;"><span tal:content="tab/name">
+                Tab Name
+                </span></a>
+                    <div class="subs"> 
+                        <ol class="megamenuSectionsLevel1"
+                            tal:define="panels python:view.getPanels(view.getItem(tab))"
+                            tal:condition="panels">
+                            <li tal:repeat="panel panels">
+                                <div tal:attributes="class string:panel panel-${repeat/panel/index} panel-${panel/layout}"
+                                    tal:define="html panel/@@display"
+                                    tal:condition="html"
+                                    tal:content="structure html"
+                                    />
+                            </li>
+                        </ol>
+                    </div>
                 </li>
-            </ul></li></tal:tabs></ul>
+            </tal:tabs>
+        <ul>
+    </div>
 </tal:sections>
