@@ -1,5 +1,6 @@
 [id$="globalnav"] > #nav > li {
 	position: static;
+	display: inline-block;
 	}
 #nav > li > .subs {
 	visibility:hidden;
