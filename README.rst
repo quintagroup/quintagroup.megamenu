@@ -2,12 +2,12 @@ Quintagroup Plone Mega Menu
 ===========================
 
     Clean and professional fully responsive Mega Menu solution for Plone. This product allows Plone website to display panel added to portal top as drop-down menu for navigation tabs.
-    
+
 Supported Plone versions:
 -------------------------
 
     Plone 4.3
-        
+
 Dependency: 
 -----------
 
@@ -15,7 +15,7 @@ Dependency:
 
 Notes
 -----
-            
+
     quintagroup.megamenu is not compatible with any drop-down add-ons. Make sure that packages connected with drop-down menus are not activated.
 
 Usage
@@ -28,5 +28,5 @@ Usage
 Authors
 -------
 
-    Roman Ischiv
-    Roman Kozlovskyi
+    - Roman Ischiv
+    - Roman Kozlovskyi
