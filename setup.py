@@ -41,6 +41,7 @@ setup(name='quintagroup.megamenu',
           'collective.panels',
           # -*- Extra requirements: -*-
       ],
+      extras_require={'tests':['Products.PloneTestCase']},
       entry_points="""
       # -*- Entry points: -*-
 
