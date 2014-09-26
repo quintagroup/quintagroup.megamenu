@@ -6,7 +6,6 @@ install:
 - bin/buildout -c travis.cfg -N -q -t 10
 env:
   matrix:
-  - PLONE=4.0
   - PLONE=4.1
   - PLONE=4.2
   - PLONE=4.3
@@ -17,8 +16,6 @@ language: python
 script: bin/test
 matrix:
   exclude:
-  - env: PLONE=4.0
-    python: 2.7
   - env: PLONE=4.1
     python: 2.7
   - env: PLONE=4.2
