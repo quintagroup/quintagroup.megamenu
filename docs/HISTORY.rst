@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.4
+---
+
+- Fixed template and script [roman.ischiv]
+
 1.3
 ---
 
