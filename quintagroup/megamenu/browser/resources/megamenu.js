@@ -1,6 +1,5 @@
 jQuery(window).load(function() {
 
-    $( "[id$='globalnav']" ).addClass("megamenu");
 	$( ".navbar-toggle" ).click(function() {
 			$( "#nav" ).slideToggle(500)
             $( "[id$='globalnav']" ).toggleClass( "open" );
