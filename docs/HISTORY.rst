@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.5
+
+- Fixed problem compatibility with plone.app.multilingual  [chervol]
+
 1.4
 ---
 
