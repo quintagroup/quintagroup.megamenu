@@ -3,6 +3,7 @@ from plone.app.layout.navigation.defaultpage import getDefaultPage
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Acquisition import aq_inner
 from zope.component.hooks import getSite
+from plone.app.layout.navigation.root import getNavigationRoot
 
 from collective.panels.traversal import PanelManager
 
@@ -11,7 +12,7 @@ class GlobalSectionsViewlet(ViewletBase):
     index = ViewPageTemplateFile('templates/sections.pt')
 
     def getItem(self, tab):
-        site = getSite()
+        site = getNavigationRoot(self.context)
         context = aq_inner(self.context)
         if tab.get('available'):
             item = site
