@@ -2,7 +2,6 @@ from plone.app.layout.viewlets.common import GlobalSectionsViewlet as ViewletBas
 from plone.app.layout.navigation.defaultpage import getDefaultPage
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Acquisition import aq_inner
-from zope.component.hooks import getSite
 from plone.app.layout.navigation.root import getNavigationRoot
 
 from collective.panels.traversal import PanelManager
