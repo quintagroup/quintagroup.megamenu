@@ -1,142 +1,130 @@
 [id$="globalnav"] > #nav > li {
-	position: static;
-	display: inline-block;
-	}
+    position: static;
+    display: inline-block;
+    }
 #nav > li > .subs {
-	visibility:hidden;
-	opacity:0;
-	background: #ddd;
-	float: left;
-	position: absolute;
-	width: 100%;
-	left: 0;
-	z-index: 99999;
-	}
+    visibility:hidden;
+    opacity:0;
+    background: #ddd;
+    float: left;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 99999;
+    }
 #nav > li:hover > .subs {
-	visibility:visible;
-	opacity:1;
-	transition-delay:0s;
-	}
-#nav ol {
-	list-style: none;
-	}
-#nav li ol dt {
-	margin: 1em 0;
-	background: #205c90;
-	color: #fff;
-	}
-#nav li ol a {
-	border: 0;
-	padding: 0em;
-	min-width: 1em;
-	}
-#nav li ol p img {
-	margin: 1em 1em 1em 0;
-	max-width: 100%;
-	}
-button.navbar-toggle {
-	display: none;
-	}
-#nav > li > a:hover {
+    visibility:visible;
+    opacity:1;
+    transition-delay:0s;
+    }
+#portal-globalnav .selected a:hover,
+#nav > li > a:hover,
+#nav > li.open > a {
     background:#205c90;
-	}
+    color: #fff;
+    }
+#nav ol {
+    list-style: none;
+    }
+#nav li ol dt {
+    margin: 1em 0;
+    background: #205c90;
+    color: #fff;
+    }
+#nav li ol a {
+    border: 0;
+    padding: 0em;
+    min-width: 1em;
+    }
+#nav li ol p img {
+    margin: 1em 1em 1em 0;
+    max-width: 100%;
+    }
+button.navbar-toggle {
+    display: none;
+    }
 #nav dl.portlet {
-	font-size: 100%;
-	}
-
+    font-size: 100%;
+    }
+    
 @media only screen and (max-width: 767px) {
 
-#nav > li > .subs {
-	display: none;
-	visibility:inherit;
-	opacity:1;
-	transition:visibility 0s linear 0.7s,opacity 0.7s linear;
-	}
-#nav > li:hover > .subs {
-	visibility:;
-	opacity:1;
-	transition-delay:0s;
-	}
+.megamenu {
+    width: 100%;
+    float: left;
+    }
+.megamenu > #nav > li {
+    display: block;
+    }
 #nav {
-	clear: both;
-	display: none;
-	}
-[id$="globalnav"] {
-	min-height: 50px;
-	width: 96%;
-	left: 2%;
-	position: relative;
-	}
-li.plus > a {
-	position: relative;
-	}
+    clear: both;
+    display: none;
+    }
+#nav > li > .subs {
+    display: none;
+    visibility: visible;
+    opacity:1;
+    width: 100%;
+    position: relative;
+    }
+#nav .subs .cell {
+    width: 100%;
+    clear: both;
+    margin-left: -100%;
+    }
+.nav-head:before {
+    content: "Menu";
+    position: relative;
+    top: 0.5em;
+    left: 1em;
+    }
+#nav > li > a {
+	width: 100%;
+    padding: 0.5em 1em;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
 li.plus > a:after,
 li.plus.open > a:after {
-	position: absolute;
-	right: 2%;
-	top: 12px;
-	}
+    position: absolute;
+    top: 0.5em;
+    right: 1.5em;
+    }
 li.plus > a:after {
     content: "+";
-	}
+    }
 li.plus.open > a:after {
-	content: "-";
-	}
-.nav_head:before {
-	content: "Menu";
-	position: relative;
-	top: 15px;
-	left: 30px;
-	}
-[id$="globalnav"]>#nav > li {
-	display: block;
-	}
-#nav > li > a {
-	width: 95.5%;
-	}
-#nav > li:hover > .subs {
-	visibility: visible;
-	}
-#nav > li > .subs {
-	padding: 0 2%;
-	width: 96%;
-	position: relative;
-	}
+    content: "-";
+    }
 button.navbar-toggle {
-	display: block;
-	cursor: pointer;
-	position: relative;
-	float: right;
-	padding: 3px 10px;
-	margin-top: 8px;
-	margin-right: 15px;
-	margin-bottom: 8px;
-	background-color: transparent;
-	background-image: none;
-	border:1px solid #333;
-	border-radius: 4px;
-	}
+    display: block;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    padding: 5px 10px;
+    margin: 0.5em 1em;
+    border: 1px solid #333;
+    border-radius: 4px;
+    }
 .navbar-toggle:hover,
 .navbar-toggle:focus {
-	background: #000;
-	outline: 0;
-	}
+    background: #000;
+    outline: 0;
+    }
 .navbar-toggle .icon-bar {
-	background-color: #fff;
-	}
-.navbar-toggle .icon-bar {
-	display: block;
-	width: 22px;
-	height: 2px;
-	border-radius: 1px;
-	margin: 5px 0;
-	}
+    background-color: #fff;
+    display: block;
+    width: 23px;
+    height: 3px;
+    margin: 4px 0;
+    }
 }
 
-@media only screen and (min-width: 767px) { 
-
+@media only screen and (min-width: 767px) {
 #nav,
 #nav li .subs {
-	display: block !important;
-	}
+    display: block !important;
+    }
 }

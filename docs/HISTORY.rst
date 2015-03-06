@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.5.1
+
+- Fixed support multilingual sites and styles [roman.ischiv]
+
 1.5
 
 - Fixed problem compatibility with plone.app.multilingual  [chervol]
