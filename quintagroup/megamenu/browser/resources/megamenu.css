@@ -3,19 +3,15 @@
     display: inline-block;
     }
 #nav > li > .subs {
-    visibility:hidden;
-    opacity:0;
+    display: none;
+/*    visibility:hidden;
+    opacity:0;*/
     background: #ddd;
     float: left;
     position: absolute;
     width: 100%;
     left: 0;
     z-index: 99999;
-    }
-#nav > li:hover > .subs {
-    visibility:visible;
-    opacity:1;
-    transition-delay:0s;
     }
 #portal-globalnav .selected a:hover,
 #nav > li > a:hover,
@@ -62,8 +58,8 @@ button.navbar-toggle {
     }
 #nav > li > .subs {
     display: none;
-    visibility: visible;
-    opacity:1;
+/*    visibility: visible;
+    opacity:1;*/
     width: 100%;
     position: relative;
     }
@@ -123,8 +119,9 @@ button.navbar-toggle {
 }
 
 @media only screen and (min-width: 767px) {
-#nav,
-#nav li .subs {
+
+#nav > li:hover > .subs {
     display: block !important;
+    transition-delay:0s;
     }
 }
