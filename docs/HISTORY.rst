@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.5.2
+
+- Fixed styles for descktop  [roman.ischiv]
+
 1.5.1
 
 - Fixed support multilingual sites and styles [roman.ischiv]
