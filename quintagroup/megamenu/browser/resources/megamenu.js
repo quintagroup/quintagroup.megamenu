@@ -14,6 +14,7 @@ jQuery(window).load(function() {
     $(window).resize(function() {
         if ($(window).width() >= 768) {
             $(".megamenu-nav").css({'display': 'block'})
+            $(".megamenu-nav .subs").removeAttr('style');
         } else {
             $("#portal-megamenu:not(.open) .megamenu-nav").css({'display': 'none'})
         }

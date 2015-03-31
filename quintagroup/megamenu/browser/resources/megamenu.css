@@ -1,75 +1,67 @@
-#portal-globalnav > li > .subs {
+.megamenu-nav .subs {
     display: none;
     background: #ddd;
-    float: left;
     position: absolute;
     width: 100%;
-    left: 0;
     z-index: 99999;
     }
-#portal-globalnav .selected a:hover,
-#portal-globalnav > li > a:hover,
-#portal-globalnav > li.open > a {
-    background:#205c90;
-    color: #fff;
+.megamenu-nav li:hover > .subs {
+    display: block;        
     }
-#portal-globalnav .subs .portletHeader {
+#portal-megamenu .subs a {
+    border: 0;
+    padding: 0;
+    min-width: 1em;
+    }
+#portal-megamenu .subs p img {
+    margin: 1em 1em 1em 0;
+    max-width: 100%;
+    }
+#portal-megamenu dl.portlet {
+    font-size: 100%;
+    } 
+.megamenu-nav .portletHeader {
     margin: 1em 0;
     background: #205c90;
     color: #fff;
     }
-#portal-globalnav .subs a {
-    border: 0;
-    padding: 0em;
-    min-width: 1em;
-    }
-#portal-globalnav .subs p img {
-    margin: 1em 1em 1em 0;
-    max-width: 100%;
-    }
-button.navbar-toggle {
-    display: none;
-    }
-#portal-globalnav dl.portlet {
-    font-size: 100%;
-    }
 
 @media only screen and (max-width: 767px) {
 
-.megamenu {
+#portal-megamenu {
+    background: #ddd;
     width: 100%;
     float: left;
+    margin: 1em 0;
     }
-.megamenu > #portal-globalnav > li {
-    display: block;
-    }
-#portal-globalnav {
-    clear: both;
+.megamenu-nav {
     display: none;
     }
-#portal-globalnav > li > .subs {
-    display: none;
-    width: 100%;
-    position: relative;
-    }
-#portal-globalnav .subs .cell {
-    width: 100%;
-    clear: both;
-    margin-left: -100%;
-    }
-.nav-head:before {
+#portal-megamenu:before {
     content: "Menu";
     position: relative;
-    top: 0.5em;
+    top: 1em;
     left: 1em;
     }
-#portal-globalnav > li > a {
-	width: 100%;
+.megamenu-nav > li > a {
+    width: 100%;
     padding: 0.5em 1em;
     position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    }
+.megamenu-nav li:hover > .subs {
+    display: none;
+    }
+.megamenu-nav .subs {
+    width: 100%;
+    position: relative;
+    }
+.megamenu-nav .subs .cell {
+    width: 100%;
+    clear: both;
+    margin-left: -100%;
     }
 li.plus > a:after,
 li.plus.open > a:after {
@@ -83,7 +75,7 @@ li.plus > a:after {
 li.plus.open > a:after {
     content: "-";
     }
-button.navbar-toggle {
+#portal-megamenu .navbar-toggle {
     display: block;
     cursor: pointer;
     position: relative;
@@ -93,27 +85,16 @@ button.navbar-toggle {
     border: 1px solid #333;
     border-radius: 4px;
     }
-.navbar-toggle:hover,
-.navbar-toggle:focus {
+#portal-megamenu .navbar-toggle:hover,
+#portal-megamenu .navbar-toggle:focus {
     background: #000;
     outline: 0;
     }
-.navbar-toggle .icon-bar {
+#portal-megamenu .navbar-toggle .icon-bar {
     background-color: #fff;
     display: block;
     width: 23px;
     height: 3px;
     margin: 4px 0;
-    }
-}
-
-@media only screen and (min-width: 767px) {
-
-#portal-globalnav > li > .subs {
-    display: none !important;
-    }
-#portal-globalnav > li:hover > .subs {
-    display: block !important;
-    transition-delay:0s;
     }
 }
