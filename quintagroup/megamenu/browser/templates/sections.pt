@@ -4,7 +4,7 @@
     <p class="hiddenStructure" i18n:translate="heading_sections">Navigation</p>
 
 
-    <div id="nav" class="megamenu"
+    <div id="portal-megamenu" class="megamenu"
         tal:define="selected_tab python:view.selected_portal_tab">
             <div class="nav_head">
                 <button type="button" class="navbar-toggle">
