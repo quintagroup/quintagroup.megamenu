@@ -6,7 +6,7 @@
     z-index: 99999;
     }
 .megamenu-nav li:hover > .subs {
-    display: block;        
+    display: block;
     }
 #portal-megamenu .subs a {
     border: 0;
@@ -19,17 +19,18 @@
     }
 #portal-megamenu dl.portlet {
     font-size: 100%;
-    } 
+    }
 .megamenu-nav .portletHeader {
     margin: 1em 0;
     background: #205c90;
     color: #fff;
     }
+.navbar-toggle {
+    display: none;
+    }
 
 @media only screen and (max-width: 767px) {
-
-#portal-megamenu {
-    background: #ddd;
+.megamenu {
     width: 100%;
     float: left;
     margin: 1em 0;
@@ -37,13 +38,8 @@
 .megamenu-nav {
     display: none;
     }
-#portal-megamenu:before {
-    content: "Menu";
-    position: relative;
-    top: 1em;
-    left: 1em;
-    }
 .megamenu-nav > li > a {
+    border-right: 0;
     width: 100%;
     padding: 0.5em 1em;
     position: relative;
@@ -75,26 +71,28 @@ li.plus > a:after {
 li.plus.open > a:after {
     content: "-";
     }
-#portal-megamenu .navbar-toggle {
-    display: block;
+.megamenu .navbar-toggle {
+    background-color: #ddd;
+    border: 0;
     cursor: pointer;
-    position: relative;
-    float: right;
-    padding: 5px 10px;
-    margin: 0.5em 1em;
-    border: 1px solid #333;
-    border-radius: 4px;
-    }
-#portal-megamenu .navbar-toggle:hover,
-#portal-megamenu .navbar-toggle:focus {
-    background: #000;
+    display: block;
+    padding: 0.6em 0;
+    width: 100%;
     outline: 0;
     }
-#portal-megamenu .navbar-toggle .icon-bar {
-    background-color: #fff;
+.megamenu.open .navbar-toggle,
+.megamenu .navbar-toggle:hover {
+    background-color: #205c90;
+    }
+.megamenu .navbar-toggle .icon-bar {
+    background-color: #205c90;
     display: block;
-    width: 23px;
     height: 3px;
-    margin: 4px 0;
+    margin: 4px auto;
+    width: 23px;
+    }
+.megamenu.open .navbar-toggle .icon-bar,
+.megamenu .navbar-toggle:hover .icon-bar {
+    background-color: #fff;
     }
 }
