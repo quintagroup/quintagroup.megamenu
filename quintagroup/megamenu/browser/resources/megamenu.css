@@ -35,10 +35,10 @@ button.navbar-toggle {
     }
 
 @media only screen and (max-width: 767px) {
-
 .megamenu {
-    width: 100%;
     float: left;
+    margin-bottom: 1em;
+    width: 100%;
     }
 .megamenu > #portal-globalnav > li {
     display: block;
@@ -64,6 +64,7 @@ button.navbar-toggle {
     left: 1em;
     }
 #portal-globalnav > li > a {
+    border-right: 0;
 	width: 100%;
     padding: 0.5em 1em;
     position: relative;
@@ -83,28 +84,31 @@ li.plus > a:after {
 li.plus.open > a:after {
     content: "-";
     }
-button.navbar-toggle {
-    display: block;
+.megamenu .navbar-toggle {
+    background-color: #ddd;
+    border: 0;
     cursor: pointer;
-    position: relative;
-    float: right;
-    padding: 5px 10px;
-    margin: 0.5em 1em;
-    border: 1px solid #333;
-    border-radius: 4px;
-    }
-.navbar-toggle:hover,
-.navbar-toggle:focus {
-    background: #000;
+    display: block;
+    padding: 0.6em 0;
+    width: 100%;
     outline: 0;
     }
-.navbar-toggle .icon-bar {
-    background-color: #fff;
-    display: block;
-    width: 23px;
-    height: 3px;
-    margin: 4px 0;
+.megamenu.open .navbar-toggle,
+.megamenu .navbar-toggle:hover {
+    background-color: #205c90;
     }
+.megamenu .navbar-toggle .icon-bar {
+    background-color: #205c90;
+    display: block;
+    height: 3px;
+    margin: 4px auto;
+    width: 23px;
+    }
+.megamenu.open .navbar-toggle .icon-bar,
+.megamenu .navbar-toggle:hover .icon-bar {
+    background-color: #fff;
+    }
+
 }
 
 @media only screen and (min-width: 767px) {
