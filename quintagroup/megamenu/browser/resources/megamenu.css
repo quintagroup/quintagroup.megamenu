@@ -1,29 +1,37 @@
+#portal-megamenu .megamenu-nav:hover > li:hover > a {
+    background-color: #205c90;
+    color: #fff;
+    }
 .megamenu-nav .subs {
+    background-color: #ddd;
     display: none;
-    background: #ddd;
+    padding: 1em 0;
     position: absolute;
     width: 100%;
     z-index: 99999;
     }
-.megamenu-nav li:hover > .subs {
+.megamenu-nav li:hover .subs {
     display: block;
     }
 #portal-megamenu .subs a {
+    background-color: transparent;
     border: 0;
+    color: #205c90;
+    display: inline;
     padding: 0;
-    min-width: 1em;
     }
-#portal-megamenu .subs p img {
-    margin: 1em 1em 1em 0;
+#portal-megamenu .subs img {
     max-width: 100%;
     }
-#portal-megamenu dl.portlet {
+#portal-megamenu .portlet {
     font-size: 100%;
     }
 .megamenu-nav .portletHeader {
-    margin: 1em 0;
-    background: #205c90;
+    background-color: #205c90;
     color: #fff;
+    }
+#portal-megamenu .portletHeader a {
+    color: #000;
     }
 .navbar-toggle {
     display: none;
@@ -31,54 +39,61 @@
 
 @media only screen and (max-width: 767px) {
 .megamenu {
-    width: 100%;
-    float: left;
-    margin: 1em 0;
+    margin: 0 0 1em;
     }
 .megamenu-nav {
     display: none;
     }
-.megamenu-nav > li > a {
-    border-right: 0;
-    width: 100%;
-    padding: 0.5em 1em;
-    position: relative;
+#portal-megamenu .megamenu-nav > li > a {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    border-right: 0;
+    padding: 0.5em 1em;
+    position: relative;
+    width: 100%;
     }
-.megamenu-nav li:hover > .subs {
+.megamenu-nav li:hover .subs {
     display: none;
     }
 .megamenu-nav .subs {
-    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em;
     position: relative;
     }
 .megamenu-nav .subs .cell {
-    width: 100%;
     clear: both;
+    float: none;
     margin-left: -100%;
+    width: 100%;
     }
-li.plus > a:after,
-li.plus.open > a:after {
+#portal-megamenu .plus.open > a {
+    background-color: #205c90;
+    color: #fff;
+    }
+.megamenu-nav .plus > a:after {
     position: absolute;
+    right: 1em;
     top: 0.5em;
-    right: 1.5em;
     }
-li.plus > a:after {
+.megamenu-nav .plus > a:after {
     content: "+";
     }
-li.plus.open > a:after {
+.megamenu-nav .plus.open > a:after {
     content: "-";
     }
+
+/* Navbar Toggle */
 .megamenu .navbar-toggle {
     background-color: #ddd;
     border: 0;
     cursor: pointer;
     display: block;
-    padding: 0.6em 0;
-    width: 100%;
     outline: 0;
+    padding: 0.7em 0;
+    width: 100%;
     }
 .megamenu.open .navbar-toggle,
 .megamenu .navbar-toggle:hover {
