@@ -3,7 +3,7 @@ Changelog
 
 1.5.3
 
-- Modified the script so that links which contain megamenu were working[roman.ischiv]
+- Modified the script so that links which contain megamenu would worked, cleaned css styles and js script for megamenu [roman.ischiv]
 
 1.5.2
 
