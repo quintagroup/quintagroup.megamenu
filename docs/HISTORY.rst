@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.5.3
+
+- Modified the script so that links which contain megamenu were working[roman.ischiv]
+
 1.5.2
 
 - Fixed styles for descktop  [roman.ischiv]

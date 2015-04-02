@@ -1,7 +1,7 @@
 jQuery(window).load(function() {
     $(".navbar-toggle").click(function() {
         $(".megamenu-nav").slideToggle(500);
-        $("#portal-megamenu").toggleClass("open");
+        $("#portal-megamenu").toggleClass("open");ro
     });
     $(".megamenu-nav li .subs").parent(".megamenu-nav li").addClass("plus");
     $(".megamenu-nav > li.plus > a").click(function(event) {
