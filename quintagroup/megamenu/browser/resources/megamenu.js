@@ -6,9 +6,11 @@ jQuery(window).load(function() {
     $(".megamenu-nav li .subs").parent(".megamenu-nav li").addClass("plus");
     $(".megamenu-nav > li.plus > a").click(function(event) {
         if ($(window).width() <= 768) {
-            event.preventDefault();
-            $(".megamenu-nav > li").not($(this).parent()).removeClass("open").find(".subs").slideUp(350);
-            $(this).parent().toggleClass("open").find(".subs").slideToggle(500);
+            if ($(this).parent().is(':not(.open)')) {
+                event.preventDefault();
+                $(".megamenu-nav > li").not($(this).parent()).removeClass("open").find(".subs").slideUp(350);
+                $(this).parent().toggleClass("open").find(".subs").slideToggle(500);
+            }
         }
     });
     $(window).resize(function() {
